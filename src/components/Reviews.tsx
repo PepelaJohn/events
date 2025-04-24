@@ -4,7 +4,6 @@
 import { useRef, useState } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 import { webname } from '@/contants';
 
 type Review = {
