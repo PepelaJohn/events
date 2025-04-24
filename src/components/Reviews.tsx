@@ -58,14 +58,7 @@ export default function Reviews() {
 
   return (
     <section ref={sectionRef} className="py-20 lg:py-32 bg-neutral-50 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-10">
-        <Image
-          src="/images/pattern-background.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
-      </div>
+      
       
       <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10">
         <motion.h2 
@@ -78,7 +71,7 @@ export default function Reviews() {
         </motion.h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="relative h-70 md:h-64">
+          <div className="relative h-80 ">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}

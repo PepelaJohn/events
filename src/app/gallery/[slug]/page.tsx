@@ -76,7 +76,7 @@ export default async function GalleryItemPage({ params }: PageProps) {
         {/* Title and Description */}
         <h1 className='text-3xl font-bold mb-3 '>Gallery</h1>
       {/* Image Gallery Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 ">
+      <div className="grid grid-cols-2 ">
         {galleryItem.images.map((image, index) => (
           <div 
             key={index} 
