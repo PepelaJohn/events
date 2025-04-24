@@ -27,8 +27,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${webname} | Luxury Event Planning`,
     description: 'Best event planning company serving Nairobi City and beyond.',
-    images: ['/images/og-image.jpg'],
+    url: 'https://events-team.netlify.app/', // Replace with your actual URL
+    siteName: webname || 'Luxury Event Planniing',
+    images: [
+      {
+        url: 'https://events-team.netlify.app/preview.png', // Replace with your actual OG image
+        width: 1200,
+        height: 630,
+        alt: 'Luxury Event Planning',
+      },
+    ],
+    locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${webname} | Luxury Event Planning`,
+    description: 'Best event planning company serving Nairobi City and beyond.',
+    images: ['https://events-team.netlify.app/preview.png'],
   },
 };
 
