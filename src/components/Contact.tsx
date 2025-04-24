@@ -33,9 +33,9 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white p-8 rounded-lg shadow-sm"
           >
-            <h2 className="text-3xl md:text-4xl font-cormorant mb-6">Let's Toast</h2>
+            <h2 className="text-3xl md:text-4xl font-cormorant mb-6">Let&apos;s Toast</h2>
             <p className="text-neutral-700 mb-8">
-              Ready to discuss your event? Let's connect and create something memorable together.
+              Ready to discuss your event? Let&apos;s connect and create something memorable together.
             </p>
             
             <form className="space-y-6">

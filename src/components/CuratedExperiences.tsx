@@ -27,7 +27,7 @@ export default function CuratedExperiences() {
               {webname.toLocaleUpperCase()} is a boutique full-service, {webname.toLocaleUpperCase()} is a boutique event planning and design company that specializes in curated, heartfelt, breathtaking weddings, and private celebrations.
             </p>
             <p className="text-neutral-700 leading-relaxed mb-8">
-              We are inspired by our clients' mission, values, and goals to create memorable experiences for their guests. We believe in the power of creating intentional, well-planned celebrations that not only share your voice and build your brand but are enjoyable for everyone involved.
+              We are inspired by our clients&apos; mission, values, and goals to create memorable experiences for their guests. We believe in the power of creating intentional, well-planned celebrations that not only share your voice and build your brand but are enjoyable for everyone involved.
             </p>
             <div className="text-center lg:text-left">
               <Link href="#" className="btn inline-block transition-all duration-300 hover:bg-neutral-100">

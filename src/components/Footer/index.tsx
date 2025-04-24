@@ -1,9 +1,7 @@
 // FILE: src/components/Footer.tsx
 'use client';
-
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import AccurateLogo from '../Logo';
 import { webname } from '@/contants';

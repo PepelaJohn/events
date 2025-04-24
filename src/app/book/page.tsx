@@ -54,7 +54,7 @@ export default function BookPage() {
               </svg>
             </div>
             <h2 className="text-2xl font-light text-stone-800 mb-3">Thank You!</h2>
-            <p className="text-stone-600 mb-6">Your consultation request has been received. We're excited to help plan your perfect event and will be in touch within 24 hours.</p>
+            <p className="text-stone-600 mb-6">Your consultation request has been received. We&apos;re excited to help plan your perfect event and will be in touch within 24 hours.</p>
             <button 
               onClick={() => setSubmitted(false)}
               className="bg-stone-200 text-stone-700 px-5 py-2 rounded hover:bg-stone-300 transition"

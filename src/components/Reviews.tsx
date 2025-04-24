@@ -95,7 +95,7 @@ export default function Reviews() {
                   </div>
                   
                   <div>
-                    <p className="italic text-neutral-700">"{reviews[activeIndex].quote}"</p>
+                    <p className="italic text-neutral-700">&quot;{reviews[activeIndex].quote}&quot;</p>
                     {reviews[activeIndex].author && (
                       <p className="mt-4 text-sm font-medium">
                         {reviews[activeIndex].author}
