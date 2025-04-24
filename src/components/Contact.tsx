@@ -20,7 +20,7 @@ export default function Contact() {
             className="relative h-80 md:h-96 lg:h-full"
           >
             <Image
-              src="/images/toasting-glasses.jpg"
+              src="/images/luxury-event.jpeg"
               alt="Champagne toast"
               fill
               className="object-cover rounded-lg"
@@ -47,7 +47,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#b7c2b9] focus:border-transparent transition-colors"
+                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#406848] focus:border-transparent transition-colors"
                   required
                 />
               </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#b7c2b9] focus:border-transparent transition-colors"
+                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#406848] focus:border-transparent transition-colors"
                   required
                 />
               </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#b7c2b9] focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#406848] focus:border-transparent transition-colors resize-none"
                   required
                 />
               </div>
@@ -82,7 +82,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full py-3 bg-[#b7c2b9] text-white rounded-md hover:bg-[#9eafa1] transition-colors focus:outline-none focus:ring-2 focus:ring-[#b7c2b9] focus:ring-offset-2"
+                className="w-full py-3 bg-[#406848] text-white rounded-md  transition-colors focus:outline-none focus:ring-2 focus:ring-[#406848] focus:ring-offset-2"
               >
                 Send a Message
               </motion.button>

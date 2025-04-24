@@ -5,6 +5,7 @@ import { useRef, useState } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import { webname } from '@/contants';
 
 type Review = {
   id: number;
@@ -35,7 +36,7 @@ export default function Reviews() {
     },
     {
       id: 3,
-      quote: "I've worked with Chappelow Events on multiple events. They are the most professional organization in the event planning industry. Great communication with vendors and clients. Highly recommended.",
+      quote: `I've worked with ${webname.toLocaleUpperCase()} on multiple events. They are the most professional organization in the event planning industry. Great communication with vendors and clients. Highly recommended.`,
       author: "Carlos Woo",
       company: "DesignFlow KC",
       date: "February 27, 2024",
@@ -77,7 +78,7 @@ export default function Reviews() {
         </motion.h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="relative h-64 md:h-48">
+          <div className="relative h-70 md:h-64">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -87,7 +88,7 @@ export default function Reviews() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0"
               >
-                <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm h-full flex flex-col justify-between">
+                <div className="  p-6 md:p-8 rounded-lg shadow-sm h-fit mb-4 flex flex-col justify-between">
                   <div>
                     <p className="text-sm text-neutral-500 mb-2">{reviews[activeIndex].date}</p>
                     <h3 className="text-lg font-medium mb-2">{reviews[activeIndex].event}</h3>
@@ -124,7 +125,7 @@ export default function Reviews() {
                          key={index}
                          onClick={() => setActiveIndex(index)}
                          className={`w-2 h-2 rounded-full transition-colors ${
-                           index === activeIndex ? 'bg-[#b7c2b9]' : 'bg-neutral-300'
+                           index === activeIndex ? 'bg-[#90c59a]' : 'bg-neutral-300'
                          }`}
                          aria-label={`Go to review ${index + 1}`}
                        />

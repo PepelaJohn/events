@@ -11,6 +11,7 @@ type Event = {
   title: string;
   image: string;
   category: string;
+  slug: string;
 };
 
 export default function Spotlight() {
@@ -18,14 +19,16 @@ export default function Spotlight() {
     {
       id: 1,
       title: 'Inclusion Gala',
-      image: '/images/gala-event.jpg',
-      category: 'Nonprofit'
+      image: '/images/wedding.jpeg',
+      category: 'Nonprofit',
+      slug: 'inclusion-gala'
     },
     {
       id: 2,
       title: 'Tech Conference 2024',
-      image: '/images/conference-event.jpg',
-      category: 'Corporate'
+      image: '/images/corporate.jpeg',
+      category: 'Corporate',
+      slug: 'corporate-events'
     }
   ];
 
@@ -63,7 +66,7 @@ export default function Spotlight() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <p className="text-sm uppercase tracking-wider mb-2 opacity-90">{event.category}</p>
                   <h3 className="text-2xl font-cormorant mb-4">{event.title}</h3>
-                  <Link href={`/portfolio/${event.id}`} className="inline-block py-2 px-4 bg-white/20 backdrop-blur-sm text-white border border-white/30 text-sm hover:bg-white/30 transition-colors rounded-sm">
+                  <Link href={`/gallery/${event.slug}`} className="inline-block py-2 px-4 bg-white/20 backdrop-blur-sm text-white border border-white/30 text-sm hover:bg-white/30 transition-colors rounded-sm">
                     View Gallery
                   </Link>
                 </div>

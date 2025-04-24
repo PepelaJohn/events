@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond, Montserrat } from 'next/font/google';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { webname } from '@/contants';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -20,12 +21,12 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Chappelow Events | Luxury Event Planning in Kansas City',
-  description: 'Woman-owned event planning company serving Kansas City and beyond. Specializing in curated experiences for weddings, corporate events, and celebrations.',
-  keywords: 'event planning, Kansas City events, wedding planner, corporate events, luxury events',
+  title: `${webname} | Luxury Event Planning`,
+  description: 'Best event planning company serving Nairobi City and beyond. Specializing in curated experiences for weddings, corporate events, and celebrations.',
+  keywords: 'event planning, Nairobi City events, wedding planner, corporate events, luxury events',
   openGraph: {
-    title: 'Chappelow Events | Luxury Event Planning',
-    description: 'Woman-owned event planning company serving Kansas City and beyond',
+    title: `${webname} | Luxury Event Planning`,
+    description: 'Best event planning company serving Nairobi City and beyond.',
     images: ['/images/og-image.jpg'],
     type: 'website',
   },

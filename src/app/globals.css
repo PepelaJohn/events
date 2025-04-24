@@ -34,9 +34,13 @@ p, a, button, input, textarea, select {
 }
 
 .btn {
-  @apply px-8 py-2.5 border border-neutral-300 hover:border-neutral-500 transition-all duration-300 text-sm;
+  @apply px-8 py-2.5 border border-neutral-300  transition-all duration-300 text-sm;
 }
 
 .btn-primary {
-  @apply bg-[#b7c2b9] border-[#b7c2b9] text-white hover:bg-[#9eafa1] hover:border-[#9eafa1];
+  @apply bg-[#406848] border-[#406848] text-white ;
+}
+
+button{
+  cursor:pointer;
 }

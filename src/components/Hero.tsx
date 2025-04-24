@@ -25,13 +25,13 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div ref={parallaxRef} className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-background.jpg"
+          src="/images/hero.jpeg"
           alt="Elegant event setup"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="absolute inset-0 bg-black/30 "></div>
       </div>
       
       <div className="relative z-10 text-center px-4 max-w-3xl">
@@ -55,7 +55,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
-          Woman-owned Event Planning Company serving Kansas City and Beyond
+          Elegant Event Planning Company serving Nairobi City and Beyond
         </motion.p>
       </div>
       

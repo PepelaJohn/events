@@ -3,10 +3,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
-
+import FlexibleLogo from '../Logo';
+import { year } from '@/contants';
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function Navigation() {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-white shadow-md py-3' : 'bg-white md:py-8 py-5'
       }`}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -35,39 +35,32 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <nav className="hidden md:flex space-x-8">
-          <Link href="/about" className="font-montserrat text-sm tracking-wider hover:text-neutral-600 transition-colors">
+          <Link href="#" className="font-montserrat text-sm tracking-wider  hover:text-neutral-600 transition-colors">
             About
           </Link>
           <Link href="/services" className="font-montserrat text-sm tracking-wider hover:text-neutral-600 transition-colors">
             Services
           </Link>
-          <Link href="/portfolio" className="font-montserrat text-sm tracking-wider hover:text-neutral-600 transition-colors">
+          <Link href="#" className="font-montserrat text-sm tracking-wider hover:text-neutral-600 transition-colors">
             Portfolio
           </Link>
         </nav>
         
         <Link href="/" className="mx-auto md:mx-0">
-          <Image 
-            src="/images/chappelow-events-logo.png" 
-            alt="Chappelow Events" 
-            width={180} 
-            height={40}
-            className="h-auto"
-            priority
-          />
+         <FlexibleLogo  isScrolled={isScrolled}  yearText={year}></FlexibleLogo>
         </Link>
         
         <div className="hidden md:flex items-center space-x-6">
-          <Link href="https://instagram.com" aria-label="Instagram" className="text-neutral-600 hover:text-neutral-900">
+          <Link  target='_blank' href="https://instagram.com" aria-label="Instagram" className="text-neutral-600 hover:text-neutral-900">
             <Instagram size={18} />
           </Link>
-          <Link href="https://facebook.com" aria-label="Facebook" className="text-neutral-600 hover:text-neutral-900">
+          <Link target='_blank' href="https://facebook.com" aria-label="Facebook" className="text-neutral-600 hover:text-neutral-900">
             <Facebook size={18} />
           </Link>
-          <Link href="https://linkedin.com" aria-label="LinkedIn" className="text-neutral-600 hover:text-neutral-900">
+          <Link target='_blank' href="https://linkedin.com" aria-label="LinkedIn" className="text-neutral-600 hover:text-neutral-900">
             <Linkedin size={18} />
           </Link>
-          <Link href="/contact" className="text-sm font-medium hover:text-neutral-600 transition-colors">
+          <Link href="/book" className="text-sm font-medium hover:text-neutral-600 transition-colors">
             Contact Us
           </Link>
         </div>
@@ -102,7 +95,7 @@ export default function Navigation() {
           >
             <nav className="flex flex-col p-4">
               <Link 
-                href="/about" 
+                href="#" 
                 className="py-3 px-4 hover:bg-neutral-100 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -116,14 +109,14 @@ export default function Navigation() {
                 Services
               </Link>
               <Link 
-                href="/portfolio" 
+                href="#" 
                 className="py-3 px-4 hover:bg-neutral-100 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Portfolio
               </Link>
               <Link 
-                href="/contact" 
+                href="/book" 
                 className="py-3 px-4 hover:bg-neutral-100 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >

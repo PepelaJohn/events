@@ -134,7 +134,7 @@ export default function Services() {
                             transition={{ duration: 0.3, delay: i * 0.05 }}
                             className="flex items-center"
                           >
-                            <span className="h-1.5 w-1.5 rounded-full bg-[#b7c2b9] mr-3"></span>
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#406848] mr-3"></span>
                             {item}
                           </motion.li>
                         ))}
